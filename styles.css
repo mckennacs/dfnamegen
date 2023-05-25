@@ -1,0 +1,79 @@
+/* Dwarf Fortress Colors:
+https://dwarffortresswiki.org/index.php/DF2014:Color */
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Dwarf Fortress";
+    src: url(AcPlus_IBM_VGA_8x14.ttf);
+}
+
+body {
+    font-family: Dwarf Fortress;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    font-size: 200%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 0.5rem;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 0.5rem;
+}
+
+button {
+    font-family: Dwarf Fortress;
+    font-size: 120%;    
+}
+
+button:hover {
+    background-color: #808080;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 100%;
+    color: #fff;
+    padding: 0;
+}
+
+#cursor {
+    float: left;
+    margin-left: 10%;
+    size: 300%;
+}
+
+
+#output {
+    border: 5px solid #C0C0C0;
+    margin: 2% auto;
+    height: fit-content;
+    min-height: 50vh;
+}
+
+@keyframes legendary {
+    0% {background-color: #F400A1;}
+    25% {background-color: #007FFF;}
+    50% {background-color: #B2004B;}
+    60% {background-color: #FFDAB9;}
+    70% {background-color: #FFDAB9;}
+    90% {background-color:  #CCCCFF;}
+    100% {background-color:  #660099;}    
+}
+
+.legendary {
+    animation: legendary 5s linear 2s infinite alternate-reverse; animation-fill-mode: both;
+}

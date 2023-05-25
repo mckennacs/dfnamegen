@@ -1,19 +1,38 @@
 <!--
  * Chris McKenna
- * Module 01 Programming Project
+ * Final Project
  * 
- * An about me page written in HTML
+ * Generates random dwarf names based on naming conventions of the PC game Dwarf Fortress
  *
  -->
 
 <!DOCTYPE html>
-<html lang="en">
+
+<head>
+	<html lang="en">
 	<meta charset="UTF-8" />
 	<title>Page Title</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link rel="stylesheet" href="" />
-	<style></style>
-	<body>
-		<script src="dwarf.js"></script>
-	</body>
+	<link rel="stylesheet" href='styles.css'>
+	<script src="https://kit.fontawesome.com/f5edd816d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Generate a Dwarf Fortress&#8482; Dwarf Name:</h1>
+		<button type="button" id="dwarf-btn">Make a dwarf</button>
+		<button type="button" id="reset">Clear List</button>
+	</header>
+	<main>
+		<section id="output">
+			<ul id="dwarf-names">
+				<div id="cursor">▓</div>
+			</ul>
+		</section>
+	</main>
+	<script src="dwarf.js">
+	</script>
+</body>
+
 </html>
